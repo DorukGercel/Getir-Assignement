@@ -1,0 +1,27 @@
+{
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/app.js",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "test": "jest --testEnvironment=node --runInBand ./test"
+  },
+  "author": "Doruk Gerçel",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "@hapi/joi-date": "^2.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "http-status": "^1.5.0",
+    "mongoose": "^6.0.14",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "jest": "^27.4.5",
+    "mongodb-memory-server": "^8.1.0",
+    "node-mocks-http": "^1.11.0",
+    "supertest": "^6.1.6"
+  }
+}
