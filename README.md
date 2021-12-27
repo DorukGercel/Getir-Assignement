@@ -45,6 +45,8 @@ To execute tests:
 </tbody>
 </table>
 
+**All these fields are required!**
+
 ## Documentation
 #### Swagger:
 `/doc`
