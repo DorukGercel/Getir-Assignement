@@ -1,4 +1,8 @@
 # Getir Node.js Bootcamp Graduation Project
+
+## Deployed App:
+https://doruk-gercel-getir-assignement.herokuapp.com/
+
 ## How to Use
 #### First:
   ```
