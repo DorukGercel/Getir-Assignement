@@ -1,0 +1,115 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "Doruk Gerçel",
+      "description": "Getir - Assignement",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "contact": {
+        "name": "Doruk Gerçel",
+        "email": "dorukgercel@hotmail.com"
+      }
+    },
+    "tags": [
+      {
+        "name": "Records",
+        "description": "Fetch the records according to query"
+      }
+    ],
+    "consumes": [
+      "json"
+    ],
+    "produces": [
+      "json"
+    ],
+    "paths": {
+      "/": {
+        "post": {
+          "tags": [
+            "Records"
+          ],
+          "summary": "Fetch Records",
+          "produces": [
+            "json"
+          ],
+          "parameters": [
+            {
+              "name": "body",
+              "in": "body",
+              "description": "Fetch Related Records",
+              "required": true,
+              "schema": {
+                    "type": "object",
+                    "properties": {
+                      "startDate": {
+                        "type": "date",
+                        "example": "2009-01-26"
+                      },
+                      "endDate": {
+                        "type": "date",
+                        "example": "2011-02-02"
+                      },
+                      "minCount": {
+                        "type": "integer",
+                        "example": 0
+                      },
+                      "maxCount": {
+                        "type": "integer",
+                        "example": 1000
+                      }
+                    }
+                }
+              }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successful",
+              "examples": {
+                "code": 0,
+                "msg":  "Success",
+                "records" : [
+                    {
+                        "key":"TAKwGc6Jr4i8Z487",
+                        "createdAt":"2017-01-28T01:22:14.398Z",
+                        "totalCount":2800
+                        },
+                        {
+                        "key":"NAeQ8eX7e5TEg7oH",
+                        "createdAt":"2017-01-27T08:19:14.135Z",
+                        "totalCount":2900
+                        }
+                ]
+              }
+            },
+            "400": {
+              "description": "Bad Request",
+              "examples": {
+                "code": 2,
+                "msg":  "Bad Request",
+                "records" : []
+              }
+            },
+            "404": {
+              "description": "Not Found",
+              "examples": {
+                "code": 3,
+                "msg":  "Not Found",
+                "records" : []
+              }
+            },
+            "500": {
+                "description": "Internal Server Error",
+                "examples": {
+                  "code": 1,
+                  "msg":  "Internal Server Error",
+                  "records" : []
+                }
+            }
+        }
+      }
+    }
+  }
+}
