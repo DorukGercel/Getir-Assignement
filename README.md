@@ -3,7 +3,7 @@
 ## Deployed App:
 https://doruk-gercel-getir-assignement.herokuapp.com/
 
-## How to Use
+## How to Use:
 #### First:
   ```
    npm install
@@ -18,10 +18,10 @@ To execute tests:
    npm test
    ```
    
-## Endpoint
+## Endpoint:
 `POST /`
 
-## Request Format
+## Request Format:
 <table>
 <thead>
 <tr>
@@ -51,6 +51,6 @@ To execute tests:
 
 **All these fields are required!**
 
-## Documentation
+## Documentation:
 #### Swagger:
 `/doc`
